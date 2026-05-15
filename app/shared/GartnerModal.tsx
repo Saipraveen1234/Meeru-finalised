@@ -8,9 +8,10 @@ import { motion, AnimatePresence } from "framer-motion";
 interface GartnerModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onBookMeeting?: () => void;
 }
 
-export default function GartnerModal({ isOpen, onClose }: GartnerModalProps) {
+export default function GartnerModal({ isOpen, onClose, onBookMeeting }: GartnerModalProps) {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -157,14 +158,15 @@ export default function GartnerModal({ isOpen, onClose }: GartnerModalProps) {
 
                 {/* CTA buttons */}
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-                  <a
-                    href="https://www.gartner.com/en/conferences/na/cfo-finance-us/register"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex justify-center items-center gap-2 px-5 py-3 rounded-full bg-meeru-orange text-white text-sm font-semibold hover:bg-meeru-orange/90 transition-colors"
+                  <button
+                    onClick={() => {
+                      onClose();
+                      onBookMeeting?.();
+                    }}
+                    className="flex-1 inline-flex justify-center items-center gap-2 px-5 py-3 rounded-full bg-meeru-orange text-white text-sm font-semibold hover:bg-meeru-orange/90 transition-colors cursor-pointer"
                   >
                     Book a Meeting at Booth #721 <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </button>
                   <a
                     href="https://www.gartner.com/en/conferences/na/cfo-finance-us"
                     target="_blank"

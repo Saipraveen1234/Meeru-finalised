@@ -58,12 +58,14 @@ export default function CTAFooterSection({ showCTA = true }: { showCTA?: boolean
           >
             Request a Demo <ArrowRight className="w-4 h-4" />
           </button>
-          <a
-            href="/#products"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-gray-200 text-gray-600 text-[15px] font-medium hover:border-gray-300 hover:bg-gray-50 transition-colors bg-white/50 backdrop-blur-sm"
-          >
-            Explore the Workbenches <ArrowRight className="w-4 h-4" />
-          </a>
+          {false && (
+            <a
+              href="/#products"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-gray-200 text-gray-600 text-[15px] font-medium hover:border-gray-300 hover:bg-gray-50 transition-colors bg-white/50 backdrop-blur-sm"
+            >
+              Explore the Workbenches <ArrowRight className="w-4 h-4" />
+            </a>
+          )}
         </motion.div>
       </div>
         </>

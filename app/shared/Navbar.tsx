@@ -9,6 +9,7 @@ import GartnerModal from "./GartnerModal";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Products", href: "/#products" },
 ];
 
 export default function Navbar() {
@@ -137,7 +138,7 @@ export default function Navbar() {
       </AnimatePresence>
 
       <DemoModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-      <GartnerModal isOpen={isGartnerOpen} onClose={() => setIsGartnerOpen(false)} />
+      <GartnerModal isOpen={isGartnerOpen} onClose={() => setIsGartnerOpen(false)} onBookMeeting={() => { setIsGartnerOpen(false); setIsModalOpen(true); }} />
     </header>
   );
 }
