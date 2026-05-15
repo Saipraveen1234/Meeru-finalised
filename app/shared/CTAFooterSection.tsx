@@ -159,7 +159,7 @@ export default function CTAFooterSection({ showCTA = true }: { showCTA?: boolean
 
           <div className="mt-16 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-[11px] font-medium text-gray-400">
-              &copy; 2026 MeeruAI Inc. All Rights Reserved.
+              &copy; 2026 Meeru AI Inc. All Rights Reserved.
             </p>
             <div className="flex items-center gap-3 text-[11px] font-medium text-gray-400">
               <a href="/privacy" className="hover:text-gray-600 transition-colors">Privacy</a>
