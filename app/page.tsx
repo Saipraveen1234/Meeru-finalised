@@ -6,7 +6,6 @@ import ArchitectureDiagramSection from "./home/sections/ArchitectureDiagramSecti
 import CapabilitiesSection from "./home/sections/CapabilitiesSection";
 import ProductsSection from "./home/sections/ProductsSection";
 import ProofPointsSection from "./home/sections/ProofPointsSection";
-import DifferenceSection from "./home/sections/DifferenceSection";
 import CTAFooterSection from "./shared/CTAFooterSection";
 import type { Metadata } from "next";
 
@@ -28,7 +27,6 @@ export default function Home() {
         <CapabilitiesSection />
         <ProductsSection />
         <ProofPointsSection />
-        <DifferenceSection />
         <CTAFooterSection />
       </div>
     </main>

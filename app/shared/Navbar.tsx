@@ -25,6 +25,24 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleMobileNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    const hash = href.split("#")[1];
+    if (hash) {
+      e.preventDefault();
+      setMobileOpen(false);
+      setTimeout(() => {
+        const el = document.getElementById(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        } else {
+          window.location.hash = hash;
+        }
+      }, 350);
+    } else {
+      setMobileOpen(false);
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -116,7 +134,7 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   className="block text-base font-medium text-gray-700 hover:text-meeru-orange transition-colors"
-                  onClick={() => setMobileOpen(false)}
+                  onClick={(e) => handleMobileNavClick(e, link.href)}
                 >
                   {link.label}
                 </a>
