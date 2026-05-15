@@ -74,7 +74,7 @@ export default function ProductsSection() {
   `;
 
   return (
-    <section id="products" className="relative w-full bg-white pb-12 lg:pb-20 pt-4 lg:pt-8 overflow-hidden">
+    <section id="products" className="relative w-full bg-white pb-12 lg:pb-20 pt-4 lg:pt-8 overflow-hidden scroll-mt-28">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
