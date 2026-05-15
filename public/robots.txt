@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.meeruai.com/sitemap.xml
+Sitemap: https://meeru.ai/sitemap.xml

@@ -1,5 +1,12 @@
 import Navbar from "../shared/Navbar";
 import CTAFooterSection from "../shared/CTAFooterSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Trust Center — MeeruAI",
+  description:
+    "Explore MeeruAI's security practices, compliance posture, and commitment to enterprise-grade trust.",
+};
 
 export default function TrustCenterPage() {
   return (

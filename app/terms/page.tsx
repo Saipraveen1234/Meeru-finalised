@@ -1,5 +1,12 @@
 import Navbar from "../shared/Navbar";
 import CTAFooterSection from "../shared/CTAFooterSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Use — MeeruAI",
+  description:
+    "Review the terms of use governing access to MeeruAI's website, products, and services.",
+};
 
 export default function TermsPage() {
   return (
@@ -21,12 +28,12 @@ export default function TermsPage() {
           <p className="text-[15px] text-gray-600 leading-relaxed mb-10">
             You consent to these terms by using any of the content, products, solutions, or services, and mobile applications provided by this website{" "}
             <a
-              href="https://www.meeruai.com/"
+              href="https://meeru.ai/"
               className="text-meeru-orange hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              (https://www.meeruai.com/)
+              (https://meeru.ai/)
             </a>
             . If you disagree to be restrained by all these Terms, including our Privacy Policy included here by reference, please do not access the Services. This agreement entails using compulsory arbitration on a personal basis to settle conflicts rather than jury trials. It restricts the assistance open to you in a dispute.
           </p>

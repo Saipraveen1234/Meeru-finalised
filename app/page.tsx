@@ -8,6 +8,13 @@ import ProductsSection from "./home/sections/ProductsSection";
 import ProofPointsSection from "./home/sections/ProofPointsSection";
 import DifferenceSection from "./home/sections/DifferenceSection";
 import CTAFooterSection from "./shared/CTAFooterSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "MeeruAI — AI Workbenches for Finance Teams",
+  description:
+    "MeeruAI helps finance teams close faster, explain every variance, and act with confidence with source-traced evidence, review, and audit-ready execution built in.",
+};
 
 export default function Home() {
   return (

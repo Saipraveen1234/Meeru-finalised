@@ -1,5 +1,12 @@
 import Navbar from "../shared/Navbar";
 import CTAFooterSection from "../shared/CTAFooterSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy — MeeruAI",
+  description:
+    "Read MeeruAI's privacy policy to understand how we collect, process, and protect your personal data.",
+};
 
 export default function PrivacyPage() {
   return (
@@ -16,7 +23,7 @@ export default function PrivacyPage() {
 
           {/* Intro */}
           <p className="text-[15px] text-gray-600 leading-relaxed">
-            Meeru AI Inc (Hereafter called "Meeru AI" Company, We, Our, Us) has a comprehensive Data Protection and Privacy Policy plan. Our Privacy Policy published on our website (www.meeruai.com) clearly explains how we collect, process, and use user data (Website Users) provided to us using contact forms or email Ids on the website and through events and campaigns.
+            Meeru AI Inc (Hereafter called "Meeru AI" Company, We, Our, Us) has a comprehensive Data Protection and Privacy Policy plan. Our Privacy Policy published on our website (meeru.ai) clearly explains how we collect, process, and use user data (Website Users) provided to us using contact forms or email Ids on the website and through events and campaigns.
           </p>
 
           <hr className="border-gray-200 my-14" />
@@ -85,7 +92,7 @@ export default function PrivacyPage() {
               Microsites, Landing Pages, Region/Country-Specific and Subdomain Websites
             </h2>
             <ul className="list-disc pl-5 text-[15px] text-gray-600 leading-relaxed space-y-2">
-              <li>From time to time Meeru AI creates microsites, landing pages, region/country-specific, or subdomain websites on the root domain (meeruai.com)</li>
+              <li>From time to time Meeru AI creates microsites, landing pages, region/country-specific, or subdomain websites on the root domain (meeru.ai)</li>
               <li>Microsites, landing pages, region/country-specific, or subdomain websites are created for special events or to cover our company activities in a particular region.</li>
               <li>These microsites, landing pages, region/country-specific, or subdomain websites may also have forms, wherein your personal information is collected, processed, and used as mentioned above.</li>
               <li>These microsites, landing pages, region/country-specific, or subdomain websites may also have social media and other websites links, and while you may visit those websites by clicking links on our website, microsite, or subdomain website we are not responsible for any of your activities on those external websites.</li>
